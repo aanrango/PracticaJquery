@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <title>Paises</title>
+</head>
+<body>
+    <div class="container text-center">
+
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../Inicio/Inicio.html">
+                    <img src="../Inicio/Media/jugones.jpg" alt="logo" width="100px"> JUGONES
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Paises
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../Paises/Paises.html">Listado Paises</a></li>
+                                        <li><a class="dropdown-item" href="../Paises/PaisesID.html">Buscar Pais</a></li>
+                                        <li><a class="dropdown-item" href="../Paises/CrearPais.html">Crear Pais</a></li>
+                                        <li><a class="dropdown-item" href="../Paises/EditarPais.html">Actualizar Pais</a></li>
+                                        <li><a class="dropdown-item" href="../Paises/EliminarPais.html">Eliminar Pais</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Equipos
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../Equipos/Equipos.html">Listado Equipos</a></li>
+                                        <li><a class="dropdown-item" href="../Equipos/EquiposID.html">Buscar Equipo</a></li>
+                                        <li><a class="dropdown-item" href="../Equipos/CrearEquipo.html">Crear Equipo</a></li>
+                                        <li><a class="dropdown-item" href="../Equipos/EditarEquipo.html">Actualizar Equipo</a></li>
+                                        <li><a class="dropdown-item" href="../Equipos/EliminarEquipo.html">Eliminar Equipo</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Jugadores
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../Jugadores/Jugadores.html">Listado Jugadores</a></li>
+                                        <li><a class="dropdown-item" href="../Jugadores/JugadoresID.html">Buscar Jugador</a></li>
+                                        <li><a class="dropdown-item" href="../Jugadores/CrearJugador.html">Crear Jugador</a></li>
+                                        <li><a class="dropdown-item" href="../Jugadores/EditarJugador.html">Actualizar Jugador</a></li>
+                                        <li><a class="dropdown-item" href="../Jugadores/EliminarJugador.html">Eliminar Jugador</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Estadios
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../Estadios/Estadios.html">Listado Estadios</a></li>
+                                        <li><a class="dropdown-item" href="../Estadios/EstadiosID.html">Buscar Estadio</a></li>
+                                        <li><a class="dropdown-item" href="../Estadios/CrearEstadio.html">Crear Estadio</a></li>
+                                        <li><a class="dropdown-item" href="../Estadios/EditarEstadio.html">Actualizar Estadio</a></li>
+                                        <li><a class="dropdown-item" href="../Estadios/EliminarEstadio.html">Eliminar Estadio</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+
+        <div>
+            <h1><br />Paises<br /><br /></h1>
+        </div>
+
+        <table id="Paises" class="table">
+            <tr class="table-dark">
+                <th>id</th>
+                <th>Nombre</th>
+            </tr>
+        </table>
+    </div>
+
+
+    <script src="../../Scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../Scripts/Views/prueba.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            TodosPaises();
+        });
+    </script>
+</body>
+</html>
